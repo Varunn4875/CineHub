@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CineHub</title>
+	<link rel="icon" href="glass.svg" type="image/svg+xml">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="ind.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-dark sticky-top">
+    <div class="container-xxl">
+      <a class="navbar-brand text-white" href="#">CineHub</a>
+      <button class="navbar-toggler text-white border border-white" id="nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- <li class="nav-item">
+            <button type="button" class="log-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a class="nav-link" href="#">Login</a></button>
+          </li> -->
+          <li class="nav-item">
+            <button type="button" class="log-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><a class="nav-link" href="#">SignUp</a></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="mobile">Enter your Mobile Number for Login *</p>
+        <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Mobile Number</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="+91@your mobile number">
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send OTP</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container d-flex justify-content-center  my-2">
+  <div class="row my-2 align-items-center justify-content-center">
+    <div class=" col-12 col-md-6  text-center g-4 ">
+      <div class="card" style="width: 25rem;">
+                 <img src="c6964c5b-690f-420c-8461-677d41e72279.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+                <h5 class="card-title">Premam</h5>
+                <p class="card-text">A nostalgic journey through the phases of love in George’s life — from innocent crush to mature romance.</p>
+                <a href="index.html" class="btn btn-primary">Book Now</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 text-center g-4 ">
+      <div class="card" style="width: 25rem;">
+                 <img src="Vaaranam Aayiram Images Hd.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+                <h5 class="card-title">Vaaranam Aayiram</h5>
+                <p class="card-text">A heartfelt journey of a son inspired by his father’s love and wisdom.
+It beautifully portrays life, loss, and the power of enduring memories.</p>
+                <a href="index.html" class="btn btn-primary">Book Now</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="footer-section" id="footer">
+  <div class="container">
+    <div class="foot align-items-center justify-content-center">
+      <div class="child-3 child">
+          <h3></h3>
+          <a href="#home"><i class="fa-solid fa-arrow-right"></i>&nbsp;&nbsp;About Us<br></a>
+         <a href="#features"><i class="fa-solid fa-arrow-right"></i>&nbsp;&nbsp;Contact Us<br></a>
+          <a href="#products"><i class="fa-solid fa-arrow-right"></i>&nbsp;&nbsp;Bookings<br></a>
+          <a href="login.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-arrow-right"></i>&nbsp;&nbsp;Login/Signup</a>
+      </div>
+      <div class="child-3 child">
+          <h3></h3>
+          <a href="#home"><i class="fa-solid fa-arrow-right"></i>&nbsp;&nbsp;Terms and Conditions<br></a>
+         <a href="#features"><i class="fa-solid fa-arrow-right"></i>&nbsp;&nbsp;Cancellation Policy<br></a>
+          <a href="#products"><i class="fa-solid fa-arrow-right"></i>&nbsp;&nbsp;Refund Policy<br></a>
+          <a href="#products"><i class="fa-solid fa-arrow-right"></i>&nbsp;&nbsp;Privacy Policy<br></a>
+          <!-- <a href="login.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-arrow-right"></i>&nbsp;&nbsp;Login/Signup</a> -->
+      </div>
+      <div class="child-3 child icons">
+          <h3>CineHub</h3>
+          <p>Follow Us On:</p>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+
+      </div>
+    </div>
+  </div>
+  </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
