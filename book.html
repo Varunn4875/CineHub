@@ -234,15 +234,15 @@
     })
 
 
-//edited later from chatgpt
-     function updateBookings() {
-  const selectedSeats = document.querySelectorAll('.seat.selected');
+  //edited later from chatgpt
+       function updateBookings() {
+    const selectedSeats = document.querySelectorAll('.seat.selected');
 
-  const seatTexts = [...selectedSeats].map(seat => seat.textContent);
-  
-  // Display them in your summary div
-  summary.textContent = `You have selected ${seatTexts.join(', ')} seat(s) for Rs.${selectedSeats.length * 200}/-.`;
-}
+    const seatTexts = [...selectedSeats].map(seat => seat.textContent);
+    
+    // Display them in your summary div
+    summary.textContent = `You have selected ${seatTexts.join(', ')} seat(s) for Rs.${selectedSeats.length * 200}/-.`;
+  }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
   </script>
