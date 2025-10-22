@@ -207,9 +207,11 @@
 
     <div class="book-sec">
       <a class="btn btn-primary" id="book-Btn">Book Now</a>
-      <a class="btn btn-success" id="pay-btn">Continue Payment</a>
+      <a class="btn btn-success" onclick="showToast()" id="pay-btn">Continue Payment</a>
     </div>
   </div>
+
+
 
   <script>
     const seats = document.querySelectorAll('.seat:not(.booked)');
@@ -244,6 +246,44 @@
     summary.textContent = `You have selected ${seatTexts.join(', ')} seat(s) for Rs.${selectedSeats.length * 200}/-.`;
   }
   </script>
+   <script>
+    function showToast( type = 'primary') {
+      // Get the toast element
+      const toastEl = document.getElementById('liveToast');
+      const toastBody = document.getElementById('toastMessage');
+
+      const selectedSeats = document.querySelectorAll('.seat.selected');
+
+    const seatTexts = [...selectedSeats].map(seat => seat.textContent);
+    
+    // Display them in your summary div
+    summary.textContent = `You have selected ${seatTexts.join(', ')} seat(s) for Rs.${selectedSeats.length * 200}/-.`;
+
+      // Update text and background
+      toastBody.textContent = `You have selected ${seatTexts.join(', ')} seat(s) for Rs.${selectedSeats.length * 200}/-.`;
+      toastEl.className = `toast align-items-center text-bg-${type} border-0`;
+
+      // Show the toast
+      const toast = new bootstrap.Toast(toastEl);
+      toast.show();
+    }
+  </script>
+
+<!-- <button class="btn btn-primary" onclick="showToast('Hello, this is a toast!')">Show Toast</button> -->
+
+  <!-- Toast Container -->
+  <div class="toast-container position-fixed top-0 start-50 translate-middle-x p-3">
+    <div id="liveToast" class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body" id="toastMessage">
+          Default message
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+ 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
   </script>
 </body>
