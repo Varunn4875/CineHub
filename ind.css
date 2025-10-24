@@ -31,11 +31,11 @@
       height: 300px;
     }
        .foot{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 40px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 0px;
   justify-content: center;
-  gap: 30px 30px;
+  gap: 10px;
   flex-wrap: wrap;
   color: white;
 
